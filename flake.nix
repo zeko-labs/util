@@ -5,10 +5,13 @@
   outputs = inputs:
     with inputs;
     {
-      packages.x86_64-linux.da-docker-image =
-        nixpkgs.legacyPackages.x86_64-linux.callPackage ./da-docker-image.nix {
-          zeko_da = zeko.packages.x86_64-linux.devnet.zeko_da;
-          version = zeko.rev;
-        };
+      packages.x86_64-linux = rec {
+        da-docker-image =
+          nixpkgs.legacyPackages.x86_64-linux.callPackage ./da-docker-image.nix {
+            zeko_da = zeko.packages.x86_64-linux.devnet.zeko_da;
+            version = zeko.rev;
+          };
+        default = da-docker-image;
+      };
     };
 }
