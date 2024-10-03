@@ -507,11 +507,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1727950808,
-        "narHash": "sha256-cPhvcyr8Qw04XzVXm5YAjKhaQwYiP+N+lyqS+z71oFU=",
+        "lastModified": 1727968982,
+        "narHash": "sha256-Q4SlqTBI3pcsbTeKiVVQil9iBnZUGMS177TueHIFWpw=",
         "ref": "MartinOndejka/da-archive",
-        "rev": "4c129d8244bc95ff3968631c5dee04d4bb46284d",
-        "revCount": 32054,
+        "rev": "616946e4fe1a54f711abfe8c1d3119092f9e433d",
+        "revCount": 32057,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/zeko-labs/zeko"

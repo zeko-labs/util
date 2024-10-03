@@ -14,7 +14,7 @@
 
         archive-relay-docker-image = 
           nixpkgs.legacyPackages.x86_64-linux.callPackage ./archive-relay-docker-image.nix {
-            zeko = zeko.packages.x86_64-linux.devnet.zeko;
+            zeko_archive_relay = zeko.packages.x86_64-linux.devnet.zeko_archive_relay;
             version = zeko.rev;
           };
 
