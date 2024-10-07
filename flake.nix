@@ -11,6 +11,13 @@
             zeko_da = zeko.packages.x86_64-linux.devnet.zeko_da;
             version = zeko.rev;
           };
+
+        archive-relay-docker-image = 
+          nixpkgs.legacyPackages.x86_64-linux.callPackage ./archive-relay-docker-image.nix {
+            zeko_archive_relay = zeko.packages.x86_64-linux.devnet.zeko_archive_relay;
+            version = zeko.rev;
+          };
+
         default = da-docker-image;
       };
     };
