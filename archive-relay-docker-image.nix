@@ -6,7 +6,7 @@ dockerTools.buildLayeredImage {
   contents = [ zeko_archive_relay bash pkgs.cacert ];
   config = {
     Entrypoint = [ "/bin/zeko-archive-relay" "--ledger-cache" "/ledger-cache" ];
-    Env = [ "NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt" ];
+    Env = [ "NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt" "ZEKO_SIGNATURE_KIND=testnet" ];
     Volumes = { "/ledger-cache" = {}; };
   };
 }

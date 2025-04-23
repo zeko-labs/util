@@ -6,6 +6,7 @@ dockerTools.buildLayeredImage {
   contents = [ zeko_da bash ];
   config = {
     Entrypoint = [ "/bin/zeko-da" ];
+    Env = [ "ZEKO_SIGNATURE_KIND=testnet" ];
     Cmd = [ "run-node" "--port" "1924" "--db-dir" "/db" ];
     Expose = 1924;
     Volumes = { "/db" = {}; };
