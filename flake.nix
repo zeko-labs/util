@@ -1,6 +1,6 @@
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
-  inputs.zeko.url = "git+https://github.com/zeko-labs/zeko?ref=compatible&submodules=1";
+  inputs.zeko.url = "git+https://github.com/zeko-labs/zeko?ref=refs/tags/v0.2.0-alpha&submodules=1";
 
   outputs = inputs:
     with inputs;
