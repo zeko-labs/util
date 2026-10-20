@@ -23,3 +23,8 @@ docker push zekolabs/zeko-da:latest
 ```
 
 Do the same for the archive relay.
+
+## License
+
+Zeko-authored code and documentation in this repository are licensed under
+the Apache License, Version 2.0. See [LICENSE](./LICENSE).
